@@ -12,7 +12,7 @@ const rules = [
 module.exports = {
   target: "web",
   mode: "development",
-  entry: "./client/src/index.tsx",
+  entry: "./src/index.tsx",
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "bundle.js"
@@ -30,8 +30,5 @@ module.exports = {
   devServer: {
     contentBase: "./",
     port: 5000
-  },
-
-  // optimization
-  optimization: {}
+  }
 };
